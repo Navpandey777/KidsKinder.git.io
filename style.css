@@ -1,0 +1,1402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "comic sans ms";
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(216, 213, 213);
+}
+
+.logo {
+    height: 45px;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin-right: auto;
+    font-size: 45px;
+    color: rgb(13, 131, 146);
+}
+
+.nav-links {
+    list-style: none;
+    color: rgb(3, 31, 49);
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: rgb(7, 48, 71);
+    font-family: "comic sans ms";
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-links li .active {
+    color: rgb(11, 156, 201);
+}
+
+.nav-links li a:hover {
+    color: rgb(18, 176, 238);
+}
+
+.sub-menu1 {
+    display: none;
+}
+
+ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 2px;
+}
+
+ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+ul li:hover .sub-menu1 ul li {
+    width: 100%;
+    padding: 3px;
+    background: transparent;
+    text-align: left;
+}
+
+ul li:hover .sub-menu1 ul li a:hover {
+    color: rgb(20, 178, 218);
+}
+
+button {
+    padding: 12px 15px;
+    background-color: rgb(13, 131, 146);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: azure;
+}
+
+button:hover {
+    background-color: rgb(22, 201, 224);
+}
+
+.container {
+    width: 100%;
+    background: rgb(30, 186, 197);
+    display: flex;
+    padding: 4px;
+    border: 6px;
+    border-color: black;
+}
+
+.container h4 {
+    margin: 10px;
+    text-transform: justify;
+    font-family: "comic Sans MS";
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: rgb(226, 234, 238);
+    margin-top: 150px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    text-transform: justify;
+    font-family: "comis sans MS";
+    font-size: 60px;
+    color: rgb(226, 234, 238);
+    margin-top: 40px;
+}
+
+.container p {
+    line-height: 1;
+    text-align: justify;
+    font-family: "comic Sans MS";
+    text-transform: justify;
+    color: rgb(226, 234, 238);
+    margin-top: 30px;
+    margin-left: -5px;
+}
+
+.button1 {
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    text-align: left;
+    margin-left: -10px;
+}
+
+.button1 button {
+    background-color: rgb(8, 63, 107);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(40, 196, 243);
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.boy {
+    float: left;
+    max-width: 63%;
+}
+
+.f-container {
+    display: flex;
+    border: 6px;
+    flex-direction: row;
+    flex-flow: row;
+    padding: 80px;
+    margin-top: 20px;
+    height: 381px;
+}
+
+.f-container .f1-item img {
+    height: 45px;
+    float: left;
+}
+
+.f-container .f1-item {
+    background-color: rgb(238, 235, 235);
+    margin: 10px;
+    width: 80%;
+    height: 200px;
+}
+
+.f-container .f1-item h1 {
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comic Sans MS";
+    color: rgb(30, 31, 88);
+    font-size: 20px;
+}
+
+.f-container .f1-item p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+    max-width: 100%;
+}
+
+.f-container .f2-item img {
+    height: 45px;
+    float: left;
+}
+
+.f-container .f2-item {
+    background-color: rgb(238, 235, 235);
+    margin: 10px;
+    width: 80%;
+    height: 200px;
+}
+
+.f-container .f2-item h1 {
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comic Sans MS";
+    color: rgb(30, 31, 88);
+    font-size: 20px;
+    text-align: calc(45);
+}
+
+.f-container .f2-item p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+    max-width: 100%;
+}
+
+.f-container .f3-item img {
+    height: 45px;
+    float: left;
+}
+
+.f-container .f3-item {
+    background-color: rgb(238, 235, 235);
+    margin: 10px;
+    width: 80%;
+    height: 200px;
+}
+
+.f-container .f3-item h1 {
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comic Sans MS";
+    color: rgb(30, 31, 88);
+    font-size: 20px;
+    text-align: calc(45);
+}
+
+.f-container .f3-item p {
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+    max-width: 100%;
+}
+
+.s-container {
+    display: flex;
+    border: 6px;
+    height: 250px;
+    flex-direction: row;
+    color: rgb(15, 41, 41);
+    justify-content: center;
+    padding: 80px;
+    margin-top: -115px;
+}
+
+.s-container .f1item img {
+    height: 45px;
+    float: left;
+}
+
+.s-container .f1item {
+    background-color: rgb(238, 235, 235);
+    margin: 10px;
+    width: 80%;
+    height: 206px;
+}
+
+.s-container .f1item h1 {
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comic Sans MS";
+    color: rgb(30, 31, 88);
+    font-size: 20px;
+    text-align: calc(45);
+}
+
+.s-container .f1item p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+    max-width: 100%;
+}
+
+.s-container .f2item img {
+    height: 45px;
+    float: left;
+}
+
+.s-container .f2item {
+    background-color: rgb(238, 235, 235);
+    margin: 10px;
+    width: 80%;
+    height: 206px;
+}
+
+.s-container .f2item h1 {
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comic Sans MS";
+    color: rgb(30, 31, 88);
+    font-size: 20px;
+    text-align: calc(45);
+}
+
+.s-container .f2item p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+    max-width: 100%;
+}
+
+.s-container .f3item img {
+    height: 45px;
+    float: left;
+}
+
+.s-container .f3item {
+    background-color: rgb(238, 235, 235);
+    margin: 10px;
+    width: 80%;
+    height: 210px;
+}
+
+.s-container .f3item h1 {
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comic Sans MS";
+    color: rgb(30, 31, 88);
+    font-size: 20px;
+    text-align: left;
+}
+
+.s-container .f3item p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+    max-width: 100%;
+}
+
+.a3container {
+    padding: 10px;
+    width: 98.5%;
+    display: flex;
+    margin-top: 8%;
+}
+
+.about-figure {
+    background-color: #fff;
+    width: 50%;
+    float: left;
+}
+
+.about-figure img {
+    width: 95%;
+    margin-left: 5%;
+}
+
+span {
+    content: "\2713";
+}
+
+.aboutus {
+    background-color: #fff;
+    width: 50%;
+    float: right;
+}
+
+.aboutus h1 {
+    color: rgb(4, 69, 88);
+    font-family: "comic sans ms";
+    margin-top: 1%;
+    font-size: 32px;
+    margin-left: 3%;
+}
+
+.aboutus h4 {
+    color: rgb(15, 190, 196);
+    font-family: "comic sans ms";
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.aboutus .beforeafter h4::after {
+    content: " ";
+    display: block;
+    width: 5%;
+    height: 2px;
+    background: rgb(15, 190, 196);
+    position: absolute;
+    margin-left: 12%;
+    margin-top: -12px;
+}
+
+.aboutus p {
+    color: rgb(71, 77, 78);
+    font-family: "comic sans ms";
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.about2-figure {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.about2-figure h3 {
+    margin-left: 3%;
+    margin-top: 2%;
+    color: rgb(71, 77, 78);
+}
+
+.aboutus .button2 {
+    padding: 6px;
+    cursor: pointer;
+    margin-top: 10%;
+    width: 100%;
+    margin-left: 3%;
+}
+
+.aboutus .button2 button {
+    background-color: rgb(15, 190, 196);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(40, 196, 243);
+    border-radius: 6px;
+}
+
+.beforafter h1 {
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(88, 191, 223);
+    margin: auto;
+    position: relative;
+    width: 450px;
+    margin-top: 5%;
+}
+
+.beforafter h1::before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgb(88, 191, 223);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.beforafter h1::after {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgb(88, 191, 223);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.kidsclasses {
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(15, 17, 19);
+    margin: auto;
+    width: 450px;
+    font-family: "comic Sans MS";
+}
+
+.n-container {
+    display: flex;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.n-container .drowing-class {
+    background-color: rgb(248, 246, 246);
+    margin: 20px;
+    width: 100%;
+    padding: auto;
+    align-items: center;
+}
+
+.n-container .drowing-class img {
+    border: 8px rgb(21, 19, 139);
+    display: inline-block;
+    margin-bottom: -3px;
+    width: 100%;
+}
+
+.n-container .drowing-class h1 {
+    margin-bottom: 10px;
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comis sans MS";
+    font-size: 32px;
+    color: rgb(35, 61, 109);
+    text-align: center;
+    padding: 10px;
+}
+
+.n-container .drowing-class p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+}
+
+.n-container .drowing-class table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(97, 96, 96);
+    text-align: center;
+    font-size: 18px;
+}
+
+.button3 {
+    padding: 6px;
+    cursor: pointer;
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.button3 button {
+    background-color: rgb(32, 156, 194);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(40, 196, 243);
+    border-radius: 6px;
+}
+
+.n-container .language-class {
+    background-color: rgb(248, 246, 246);
+    margin: 20px;
+    width: 100%;
+    padding: auto;
+    align-items: center;
+}
+
+.n-container .language-class img {
+    border: 8px rgb(21, 19, 139);
+    display: inline-block;
+    margin-bottom: -3px;
+    width: 100%;
+}
+
+.n-container .language-class h1 {
+    margin-bottom: 10px;
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comis sans MS";
+    font-size: 32px;
+    color: rgb(35, 61, 109);
+    text-align: center;
+    padding: 10px;
+}
+
+.n-container .language-class p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+}
+
+.n-container .language-class table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(97, 96, 96);
+    text-align: center;
+    font-size: 18px;
+}
+
+.button4 {
+    padding: 6px;
+    cursor: pointer;
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.button4 button {
+    background-color: rgb(32, 156, 194);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(40, 196, 243);
+    border-radius: 6px;
+}
+
+.n-container .besic-class {
+    background-color: rgb(248, 246, 246);
+    margin: 20px;
+    width: 100%;
+    padding: auto;
+    align-items: center;
+}
+
+.n-container .besic-class img {
+    border: 8px rgb(21, 19, 139);
+    display: inline-block;
+    margin-bottom: -3px;
+    width: 100%;
+}
+
+.n-container .besic-class h1 {
+    margin-bottom: 10px;
+    text-transform: justify;
+    letter-spacing: 1px;
+    font-family: "comis sans MS";
+    font-size: 32px;
+    color: rgb(35, 61, 109);
+    text-align: center;
+    padding: 10px;
+}
+
+.n-container .besic-class p {
+    text-transform: justify;
+    letter-spacing: 1px;
+    color: rgb(30, 31, 88);
+    text-align: center;
+}
+
+.n-container .besic-class table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(97, 96, 96);
+    text-align: center;
+    font-size: 18px;
+}
+
+.button5 {
+    padding: 6px;
+    cursor: pointer;
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.button5 button {
+    background-color: rgb(32, 156, 194);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(40, 196, 243);
+    border-radius: 6px;
+}
+
+.book-container {
+    text-align: center;
+    display: flex;
+    margin-top: 5%;
+}
+
+.bookseat {
+    width: 50%;
+}
+
+.bookseat .beforeaftern h3 {
+    color: rgb(13, 148, 172);
+    font-size: 13px;
+    text-align: left;
+    margin-left: 30%;
+    font-family: "comic sans ms";
+    margin-top: 2%;
+}
+
+.bookseat h5 {
+    color: rgb(6, 56, 77);
+    text-align: left;
+    font-size: 25px;
+    font-family: "comic sans ms";
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.bookseat p {
+    color: rgb(53, 56, 56);
+    text-align: left;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.bookseat h4 {
+    color: rgb(14, 131, 177);
+    margin-top: 2%;
+    text-align: left;
+    margin-left: 30%;
+}
+
+.button6 {
+    padding: 6px;
+    cursor: pointer;
+    margin: 20px;
+    width: 14%;
+    text-align: left;
+    margin-left: 30%;
+}
+
+.button6 {
+    background-color: rgb(32, 156, 194);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(40, 196, 243);
+    border-radius: 6px;
+}
+
+.bookfrom {
+    width: 50%;
+}
+
+.heading {
+    background-color: rgb(7, 37, 65);
+    width: 50%;
+    margin-left: 20%;
+    font-family: "comic Sans MS";
+    padding: 10px;
+    color: #fff;
+}
+
+.kitab {
+    width: 50%;
+    height: 300px;
+    margin-left: 20%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(6, 100, 155);
+}
+
+.input-group {
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    text-align: left;
+    margin-left: 7%;
+}
+
+.input-group label {
+    width: 100%;
+    left: 20px;
+    top: 5px;
+    padding: 8px;
+    cursor: text;
+    position: absolute;
+    font-size: 15px;
+    font-family: "comic Sans MS";
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+    padding: 8px;
+    margin-left: 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.form-control {
+    text-align: left;
+    font-size: 15px;
+    border: white;
+    border-radius: 6px;
+    width: 80%;
+    padding: 6px;
+    font-family: "comic sans ms";
+    margin-top: 8%;
+    margin-left: 1%;
+}
+
+.button009 {
+    background-color: rgb(7, 37, 65);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: azure;
+    margin-top: 5%;
+    width: 80%;
+    border-radius: 50px;
+    margin-left: 10%;
+    height: 30px;
+}
+
+.beforafter1 h2 {
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(14, 104, 131);
+    margin: auto;
+    position: relative;
+    width: 450px;
+    margin-top: 5%;
+}
+
+.beforafter1 h2::before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgb(14, 104, 131);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.beforafter1 h2::after {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgb(14, 104, 131);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.teachers {
+    background-color: white;
+    font-size: 20px bold;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(17, 48, 78);
+    margin: auto;
+    width: 450px;
+    font-family: "comic Sans MS";
+}
+
+.teachering {
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 3%;
+}
+
+#box0 {
+    width: 25%;
+}
+
+#box0 .img0 {
+    width: fit-content;
+    clip-path: circle();
+}
+
+#box1 {
+    width: 25%;
+}
+
+#box1 .img0 {
+    width: fit-content;
+    clip-path: circle();
+}
+
+#box2 {
+    width: 25%;
+}
+
+#box2 .img0 {
+    width: fit-content;
+    clip-path: circle();
+}
+
+#box3 {
+    width: 25%;
+}
+
+#box3 .img0 {
+    width: fit-content;
+    clip-path: circle();
+}
+
+#box0 h4 {
+    align-items: center;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 20px;
+    color: rgb(14, 60, 104);
+    font-family: "comic Sans MS";
+}
+
+#box0 h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    color: rgb(77, 77, 77);
+    font-family: "comic Sans MS";
+}
+
+#box1 h4 {
+    align-items: center;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 20px;
+    color: rgb(14, 60, 104);
+    font-family: "comic Sans MS";
+}
+
+#box1 h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    color: rgb(77, 77, 77);
+    font-family: "comic Sans MS";
+}
+
+#box2 h4 {
+    align-items: center;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 20px;
+    color: rgb(14, 60, 104);
+    font-family: "comic Sans MS";
+}
+
+#box2 h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    color: rgb(77, 77, 77);
+    font-family: "comic Sans MS";
+}
+
+#box3 h4 {
+    align-items: center;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 20px;
+    color: rgb(14, 60, 104);
+    font-family: "comic Sans MS";
+}
+
+#box3 h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    color: rgb(77, 77, 77);
+    font-family: "comic Sans MS";
+}
+
+@media screen and (max-width:640px) {
+    #box0 {
+        width: 25%;
+    }
+    #box1 {
+        width: 25%;
+    }
+    #box2 {
+        width: 25%;
+    }
+    #box3 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:1201px) {
+    #box0 .img0 {
+        width: 100%;
+    }
+    #box1 .img0 {
+        width: 100%;
+    }
+    #box2 .img0 {
+        width: 100%;
+    }
+    #box3 .img0 {
+        width: 100%;
+    }
+}
+
+.beforafter2 h2 {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(14, 104, 131);
+    margin: auto;
+    position: relative;
+    width: 450px;
+    margin-top: 5%;
+}
+
+.beforafter2 h2::before {
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: rgb(14, 104, 131);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: 60px;
+}
+
+.beforafter2 h2::after {
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: rgb(14, 104, 131);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: 60px;
+}
+
+.parents {
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(17, 48, 78);
+    margin-top: 3%;
+    width: 450px;
+    font-family: "comic Sans MS";
+    margin: auto;
+}
+
+.y-container {
+    display: flex;
+    margin-top: 3%;
+}
+
+.item001 {
+    background: rgb(219, 223, 224);
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item001 p {
+    font-family: "comic sans ms";
+    color: rgb(55, 57, 58);
+}
+
+.item0001 {
+    height: 150px;
+    width: 80%;
+    margin-left: 0px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.item0001 img {
+    clip-path: circle();
+}
+
+.item0001 .heading {
+    width: 50%;
+    height: 150px;
+    color: rgb(5, 49, 85);
+}
+
+.heading009 {
+    margin-top: 30px;
+    font-family: "comic Sans MS";
+    margin-left: 6px;
+}
+
+.beforafter3 h2 {
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(14, 104, 131);
+    margin: auto;
+    position: relative;
+    width: 450px;
+    margin-top: 5%;
+}
+
+.beforafter3 h2::before {
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: rgb(14, 104, 131);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: 60px;
+}
+
+.beforafter3 h2::after {
+    content: " ";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: rgb(14, 104, 131);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: 60px;
+}
+
+.blog {
+    background-color: white;
+    font-size: 32px;
+    text-align: center;
+    border: 6px;
+    padding: -45px;
+    color: rgb(17, 48, 78);
+    margin: auto;
+    width: 600px;
+    font-family: "comic Sans MS";
+}
+
+.box01 {
+    height: 245px;
+    color: rgb(248, 252, 252);
+    border: 5px solid rgb(247, 243, 243);
+}
+
+.q-container .box01 img {
+    width: 100%;
+}
+
+.q-container {
+    width: 96.9%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid: gap 5px;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+.q-container .box02 {
+    height: 234px;
+    color: rgb(248, 252, 252);
+    margin: 4px;
+    background-color: white;
+}
+
+.q-container .box02 h1 {
+    text-align: left;
+    font-size: 25px;
+    font-family: "comic Sans MS";
+    color: rgb(26, 46, 77);
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+.q-container .box02 img {
+    height: 15px;
+    margin-left: 20px;
+}
+
+.q-container .box02 h2 {
+    text-align: left;
+    font-size: 15px;
+    font-family: "comic Sans MS";
+    margin-left: 40px;
+    margin-bottom: -35px;
+    margin-top: -20px;
+    color: rgb(101, 133, 143);
+}
+
+.q-container .box02 .img2 {
+    height: 30px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.q-container .box02 h3 {
+    text-align: left;
+    font-size: 15px;
+    font-family: "comic Sans MS";
+    margin-left: 115px;
+    margin-bottom: -35px;
+    margin-top: -45px;
+    color: rgb(101, 133, 143);
+}
+
+.q-container .box02 .img3 {
+    height: 30px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.q-container .box02 h4 {
+    text-align: left;
+    font-size: 15px;
+    font-family: "comic Sans MS";
+    margin-left: 240px;
+    margin-bottom: -35px;
+    margin-top: -45px;
+    color: rgb(101, 133, 143);
+}
+
+.q-container .box02 p {
+    margin-top: 60px;
+    text-align: center;
+    font-family: "comic Sans MS";
+    color: rgb(101, 133, 143);
+}
+
+.button9 {
+    padding: 6px;
+    cursor: pointer;
+    margin: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.button9 button {
+    background-color: rgb(17, 110, 138);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(15, 112, 141);
+    border-radius: 6px;
+    margin-left: 100px;
+}
+
+.footer {
+    background: rgb(15, 112, 141);
+    color: #d3d3d3;
+    height: 582px;
+    position: relative;
+    margin-top: 125px;
+}
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1 100%;
+}
+
+.footer .footer-bottom {
+    background: rgb(5, 100, 129);
+    color: rgb(190, 194, 196);
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    font-family: "comic Sans MS";
+    display: flex;
+}
+
+#bottom1 {
+    margin-left: 35%;
+    color: rgb(16, 156, 221);
+}
+
+#bottom2 {
+    margin: 0.2%;
+}
+
+#bottom3 {
+    color: rgb(16, 156, 221);
+    margin: 0.2%;
+}
+
+.footer .footer-content .footer-section img {
+    height: 45px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.footer .footer-content .footer-section h1 {
+    margin-top: 30px;
+    font-family: "comic Sans MS";
+    font-size: 40px;
+}
+
+.footer .footer-content .footer-section p {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: justify;
+    font-family: "comic Sans MS";
+}
+
+.footer .footer-content .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 35px;
+    padding-top: 5px;
+    margin-right: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 20px;
+    color: rgb(20, 45, 68);
+    margin-top: 30px;
+}
+
+.footer .footer-content .footer-section h2 {
+    margin-top: 30px;
+    font-family: "comic Sans MS";
+    font-size: 28px;
+    text-align: center;
+    color: rgb(8, 52, 63);
+    margin-right: 27%;
+}
+
+.footer .footer-content .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-left: 70px;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .footer-section h6 {
+    font-size: 20px;
+    font-family: "comic Sans MS";
+    text-align: center;
+    margin-right: 110px;
+    margin-top: 30px;
+}
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-left: 110px;
+    color: #bebdbe;
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 5px;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .letter .text-input {
+    background: #f1ecec;
+    color: #bebdbe;
+    margin-bottom: 3px;
+    line-height: 1.5em;
+    padding: 0.7rem 1.2rem;
+    margin-left: 8%;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 56%;
+}
+
+.footer .footer-content .button10 {
+    padding: 6px;
+    cursor: pointer;
+    margin-top: -10px;
+    width: 100%;
+    margin-left: -50px;
+    padding: 20px;
+}
+
+.button10 button {
+    background-color: rgb(12, 145, 185);
+    color: white;
+    font-size: 18px;
+    border-color: rgb(40, 196, 243);
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    width: 63%;
+    cursor: pointer;
+    margin-left: 60px;
+}
